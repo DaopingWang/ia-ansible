@@ -5,14 +5,14 @@
   connection: local
 
   tasks:
-    - name: Get the full list of method parameters (get_method_parameters)
-      manageiq_automate:
-        workspace: "{{ workspace }}"
-        get_method_parameters: yes
-      register: get_method_parameters
+    # - name: Get the full list of method parameters (get_method_parameters)
+    #   manageiq_automate:
+    #     workspace: "{{ workspace }}"
+    #     get_method_parameters: yes
+    #   register: get_method_parameters
 
-    - debug: msg="Result:"
+    # - debug: msg="Result:"
 
     - name: Print debug message
       debug:
-        msg: Hello, world! Ich bin {{ name-param }} aus {{ country-param }} und string ist {{HELLO_STRING}}
+        msg: Hello, world! Ich bin {{ name_param }} aus {{ country_param }}
